@@ -219,3 +219,73 @@ lines(Param, Median_CI, lwd = 2, col = "black")
 abline(v = 0.4, lwd = 2)
 abline(h = 0.05, col = "blue", lwd = 2)
 abline(h = 0.003, col = "red", lwd = 2)
+
+# what we're visualising is basically the following;
+
+plot(
+  function(x) {dnorm(x, mean = 0, sd = 1)},
+  from = -4, to = 10,
+  xlab = "Density",
+  ylab = "X",
+  main = "Normal Distribution",
+  col = "red", lwd = 2
+); plot(
+  function(x) {dnorm(x, mean = 0.1, sd = 1)},
+  add = TRUE,
+  from = -4, to = 10,
+  xlab = "Density",
+  ylab = "X",
+  main = "Normal Distribution",
+  col = "black", lwd = 2
+)
+
+plot(
+  function(x) {dnorm(x, mean = 0, sd = 1)},
+  from = -4, to = 10,
+  xlab = "Density",
+  ylab = "X",
+  main = "Normal Distribution",
+  col = "red", lwd = 2
+); plot(
+  function(x) {dnorm(x, mean = 0.4, sd = 1)},
+  add = TRUE,
+  from = -4, to = 10,
+  xlab = "Density",
+  ylab = "X",
+  main = "Normal Distribution",
+  col = "black", lwd = 2
+)
+
+plot(
+  function(x) {dnorm(x, mean = 0, sd = 1)},
+  from = -4, to = 10,
+  xlab = "Density",
+  ylab = "X",
+  main = "Normal Distribution",
+  col = "red", lwd = 2
+); plot(
+  function(x) {dnorm(x, mean = 0.7, sd = 1)},
+  add = TRUE,
+  from = -4, to = 10,
+  xlab = "Density",
+  ylab = "X",
+  main = "Normal Distribution",
+  col = "black", lwd = 2
+)
+
+plot(
+  function(x) {dnorm(x, mean = 0, sd = 1)},
+  from = -4, to = 10,
+  xlab = "Density",
+  ylab = "X",
+  main = "Normal Distribution",
+  col = "red", lwd = 2
+); plot(
+  function(x) {dnorm(x, mean = 1, sd = 1)},
+  add = TRUE,
+  from = -4, to = 10,
+  xlab = "Density",
+  ylab = "X",
+  main = "Normal Distribution",
+  col = "black", lwd = 2
+)
